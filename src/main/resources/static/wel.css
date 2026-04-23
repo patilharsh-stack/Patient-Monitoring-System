@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: url("welcome.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  /* Overlay to darken background for readability */
+  .background-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo + Title */
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo-title h1 {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Icon */
+  .icon {
+    color: #00d9ff;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Links */
+  .headerclass {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .headerclass:hover {
+    color: #00d9ff;
+  }
+  
+  /* Buttons */
+  .btn {
+    background: linear-gradient(135deg, #00d9ff, #007bff);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #00b6e6, #005ecb);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

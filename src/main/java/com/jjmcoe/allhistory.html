@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>All.html</title>
+
+
+</head>
+<body>
+
+         <table class="table table-striped table-responsive-md border">
+         	<thead class="table-danger">
+				<tr>
+				<h1>The prescription for Patient</h1>
+				    
+				
+					<th>Serial Number</th>
+					<th>PatientName</th>
+					<th>Mobile Number</th>
+					<th>Prescription Date</th>
+					<th>Morning Tablet</th>
+					<th>Afternoon Tablet</th>
+					<th>Night Tablet</th>
+					<th>Remark</th>
+					
+					</tr>
+			</thead>
+			<tbody>
+			   <tr th:each="enq:${allh}">
+			     <td><span th:text="${enq. sn}"></span></td>
+			     <td><span th:text="${enq.patientname}"></span></td>
+			     <td><span th:text="${enq.mobilenumber}"></span></td>
+			     <td><span th:text="${enq.prescdate}"></span></td>
+			     <td><span th:text="${enq.morningtab}"></span></td>
+			     <td><span th:text="${enq.afternoontab}"></span></td>
+			     <td><span th:text="${enq.nighttab}"></span></td>
+			     <td><span th:text="${enq.remark}"></span></td>
+			      </tr>			   
+			</tbody>
+         </table>
+</body>
+</html>

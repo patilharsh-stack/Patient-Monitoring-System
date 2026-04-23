@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form Data</title>
+    <link rel="stylesheet" href="doctor.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <h2><a href="/" class="icon"><i class="fa fa-home"></i></a>   Submit Your Data</h2>
+    <form action="/data" method="POST" enctype="multipart/form-data" >
+      
+        <label for="appointmentdate">Select Todays Date to view todays Patients:</label>
+		<input type="date" id="appointmentdate" name="appointmentdate" required>
+		
+		  <label for="doctor">Select Doctor:</label>
+  <select name="doctor" id="doctor">
+                        <option value="MS">MS</option>
+                        <option value="MD">MD</option>
+                        <option value="ENT">ENT</option>
+                        <option value="ped">PED</option>
+                    </select><br><br>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
